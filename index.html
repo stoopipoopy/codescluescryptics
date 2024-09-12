@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <label for="pwd">Password:</label>
-    <input type="password" id="pwd" name="pwd">
+    <form>
+      <label for="pswd">Enter your password: </label>
+      <input type="password" id="pswd">
+      <input type="button" value="Submit" onclick="checkPswd();" />
+  </form>
+  <!--Function to check password the already set password is admin-->
+  <script type="text/javascript">
+      function checkPswd() {
+          var confirmPassword = "admin";
+          var password = document.getElementById("pswd").value;
+          if (password == confirmPassword) {
+               window.location="redherring.html";
+          }
+          else{
+              alert("Passwords do not match.");
+          }
+      }
+  </script>
   </body>
 </html>
