@@ -8,11 +8,11 @@
 <form>
     <label for="pswd"></label>
     <input type="password" id="pswd">
-    <input type="button" value="Submit" onclick="checkPswd();" />
+    <input type="button" value="Submit" onclick="letThrough();" />
 </form>
 <!--Function to check password the already set password is admin-->
 <script type="text/javascript">
-    function checkPswd() {
+    function letThrough() {
         window.location="gwuh.html";
 
     }
@@ -29,7 +29,7 @@
         var confirmPassword = "crikey";
         var password = document.getElementById("pswd").value;
         if (password.toLowerCase() == confirmPassword) {
-             window.location="gwuh.html";
+             window.location="grannyAwards.html";
         }
         else{
             alert("Passwords do not match.");
