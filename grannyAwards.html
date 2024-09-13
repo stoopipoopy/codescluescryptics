@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form>
+        <label for="pswd">Where's caleb?</label>
+        <input type="password" id="pswd">
+        <input type="button" value="Submit" onclick="checkPswd();" />
+    </form>
+    <!--Function to check password the already set password is admin-->
+    <script type="text/javascript">
+        function checkPswd() {
+            var confirmPassword = "Jász–Nagykun–Szolnok";
+            var password = document.getElementById("pswd").value;
+            if (password.toLowerCase() == confirmPassword) {
+                 window.location="gwuh.html";
+            }
+            else{
+                alert("Passwords do not match.");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -11,7 +11,7 @@
       function checkPswd() {
           var confirmPassword = "SDPCCSNDKBIC";
           var password = document.getElementById("pswd").value;
-          if (password == confirmPassword) {
+          if (password.toUpperCase() == confirmPassword) {
                window.location="redherring.html";
           }
           else{

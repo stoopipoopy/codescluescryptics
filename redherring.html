@@ -13,14 +13,8 @@
 <!--Function to check password the already set password is admin-->
 <script type="text/javascript">
     function checkPswd() {
-        var confirmPassword = "";
-        var password = document.getElementById("pswd").value;
-        if (true) {
-             window.location="gwuh.html";
-        }
-        else{
-            alert("nope");
-        }
+        window.location="gwuh.html";
+
     }
 </script>
 
@@ -32,9 +26,9 @@
 <!--Function to check password the already set password is admin-->
 <script type="text/javascript">
     function checkPswd() {
-        var confirmPassword = "admin";
+        var confirmPassword = "crikey";
         var password = document.getElementById("pswd").value;
-        if (password == confirmPassword) {
+        if (password.toLowerCase() == confirmPassword) {
              window.location="gwuh.html";
         }
         else{
