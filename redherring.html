@@ -6,7 +6,7 @@
 <body>
 <img src="IMG_0006.png" style="height:35%; width:35%">
 <form>
-    <label for="pswd">1</label>
+    <label for="pswd"></label>
     <input type="password" id="pswd">
     <input type="button" value="Submit" onclick="letThrough();" />
 </form>
@@ -19,7 +19,7 @@
 </script>
 
 <form>
-    <label for="pwsd">2</label>
+    <label for="pwsd"></label>
     <input type="password" id="pwsd">
     <input type="button" value="Submit" onclick="checkPswd();" />
 </form>
@@ -27,7 +27,7 @@
 <script type="text/javascript">
     function checkPswd() {
         var confirmPassword = "crikey";
-        var password = document.getElementById("pswd").value;
+        var password = document.getElementById("pwsd").value;
         if (password.toLowerCase() == confirmPassword) {
              window.location="grannyAwards.html";
         }
